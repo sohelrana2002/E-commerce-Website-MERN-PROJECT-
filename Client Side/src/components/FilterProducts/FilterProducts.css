@@ -1,0 +1,96 @@
+/* .filterProducts__container{
+    position: fixed;
+    top: 15rem;
+    left: 10%;
+    bottom: 0;
+} */
+.filter__search input{
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.filter__category-name{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+.filter__category-name > button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--color-light);
+    position: relative;
+    padding-bottom: .5rem;
+}
+.filter__category-name > button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--color-btn);
+    width: 50%;
+    height: 2px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.filter__category-name > button:hover::after{
+    width: 100%;
+}
+.filter__company-name > form > select{
+    max-width: 100px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.filter__colors-name{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.filter__colors-name .span__color{
+    cursor: pointer;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    opacity: .5;
+    transition: var(--transition);
+    
+}
+.filter__colors-name .span__color.active{
+    opacity: 1;
+}
+.filter__colors-name .span__color:hover{
+    opacity: 1;
+    
+}
+.filter__colors-name .color__tik{
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+.filter_price .filter__heading{
+    margin: 2rem 0 .5rem;
+}
+.filter_price > p:nth-child(2){
+    font-size: 1.6rem;
+}
+.filter_input-range > input{
+    margin-top: .5rem;
+    cursor: pointer;
+}
+.filter_clear .btn{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    color: var(--color-white);
+    background: red;
+}

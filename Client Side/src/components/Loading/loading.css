@@ -1,0 +1,15 @@
+.loading{
+    width: 100vw;
+    height: 80vh;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===============MEDIA QUERY(SMALL SCREEN)===================== */
+@media screen and (max-width: 650px) {
+    .loading{
+        font-size: 2.5rem;
+    }
+}

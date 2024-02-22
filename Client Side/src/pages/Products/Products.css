@@ -1,0 +1,4 @@
+.productsPage__container{
+    display: grid;
+    grid-template-columns: 0.24fr 1fr;
+}

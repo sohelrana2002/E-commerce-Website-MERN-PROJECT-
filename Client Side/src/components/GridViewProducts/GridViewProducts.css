@@ -1,0 +1,24 @@
+.gridView__products{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* ===============MEDIA QUERY(MEDIAM SCREEN)===================== */
+@media screen and (max-width: 1024px) {
+    .gridView__products{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+/* ===============MEDIA QUERY(SMALL SCREEN)===================== */
+@media screen and (max-width: 650px) {
+    .gridView__products{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+}

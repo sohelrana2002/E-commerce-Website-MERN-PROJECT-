@@ -1,0 +1,33 @@
+.color{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.color > span{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.color > {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.color__circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: .5;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.color__circle:hover{
+    opacity: 1;
+}
+.color__circle.active{
+    opacity: 1;
+}
+.color__icon{
+    font-size: 1.5rem;
+    color: var(--color-white);
+    font-weight: 500;
+}

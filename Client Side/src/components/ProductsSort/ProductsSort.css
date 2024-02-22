@@ -1,0 +1,49 @@
+.productSort__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productSort__icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.view__btn {
+    width: 37px;
+    height: 37px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    background: var(--color-nav);
+    color: var(--color-black);
+    transition: var(--transition);
+    font-size: 2.2rem;
+}
+
+.view__btn.active {
+    background: var(--color-btn);
+    color: var(--color-white);
+}
+.productSort__total{
+    font-size: 1.7rem;
+    color: gray;
+}
+
+
+/* .productSort__filter form{
+    padding: .5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+} */
+.productSort__filter form > select{
+    padding: .5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.productSort__filter form > select > option{
+    cursor: pointer;
+}

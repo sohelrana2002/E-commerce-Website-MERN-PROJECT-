@@ -1,0 +1,33 @@
+.errorPage_container{
+    background: rgb(10, 20, 53);
+}
+.errorPage_container .container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.errorPage_container .container h2{
+    font-size: 5rem;
+    color: var(--color-white);
+}
+
+
+/* ===============MEDIA QUERY(MEDIAM SCREEN)===================== */
+@media screen and (max-width: 1024px) {
+    .errorPage_container .container h2{
+        font-size: 4.5rem;
+    }
+}
+
+
+/* ===============MEDIA QUERY(SMALL SCREEN)===================== */
+@media screen and (max-width: 650px) {
+    .errorPage_container .container h2{
+        font-size: 3.5rem;
+    }
+    
+}
