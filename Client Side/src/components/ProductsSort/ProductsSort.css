@@ -47,3 +47,20 @@
 .productSort__filter form > select > option{
     cursor: pointer;
 }
+
+
+
+/* ===============MEDIA QUERY(SMALL SCREEN)===================== */
+@media screen and (max-width: 650px) {
+    .view__btn {
+        width: 32px;
+        height: 32px;
+        font-size: 2rem;
+    }
+    .productSort__total{
+        font-size: 1.5rem;
+    }
+    .productSort__filter form > select{
+        padding: .5rem .5rem;
+    }
+}

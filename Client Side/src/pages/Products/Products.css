@@ -2,3 +2,68 @@
     display: grid;
     grid-template-columns: 0.24fr 1fr;
 }
+
+.small__device-product{
+   display: none;
+}
+.productsPage-menubar svg{
+    fill: #000;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* ===============MEDIA QUERY(MEDIAM SCREEN)===================== */
+@media screen and (max-width: 1024px) {
+    .productsPage__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .filterSection{
+        background: #ffffff;
+        z-index: 99;
+        position: fixed;
+        padding: 5rem;
+        border-radius: 0 5px 5px 0;
+        left: -100%;
+        top: 10%;
+        transition: var(--transition);
+    }
+    .filterSection.active{
+        left: 0;
+    }
+    .small__device-product{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+        .productsPage-menubar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #0000000d;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+        }
+}
+
+
+/* ===============MEDIA QUERY(SMALL SCREEN)===================== */
+@media screen and (max-width: 650px) {
+    html{
+        font-size: 55%;
+    }
+    .container{
+        width: var(--container-width-sm);
+    }
+    .btn{
+        padding: .7rem 2.5rem;
+    }
+    section{
+        padding: 6rem 0 0;
+    }
+    .heading{
+        padding: 0rem 0 2rem;
+    }
+    
+}

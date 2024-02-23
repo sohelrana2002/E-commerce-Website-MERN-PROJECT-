@@ -58,3 +58,20 @@
     font-size: 1.5rem;
     line-height: 1.4;
 }
+
+/* ===============MEDIA QUERY(SMALL SCREEN)===================== */
+@media screen and (max-width: 650px) {
+    .listView__card{
+        grid-template-columns: 0.8fr 1fr;
+        gap: 1rem;
+    }
+    .listView__card-image{
+        padding: 1px; 
+    }
+    .listView__card-content{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

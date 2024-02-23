@@ -27,11 +27,13 @@
     width: 100%;
     height: 100%;
     display: grid;
+    place-items: center;
     padding-top: 5rem;
     position: relative;
 }
 .about__hero-image img{
     width: 100%;
+    height: 100%;
 }
 
 /* ===============MEDIA QUERY(MEDIAM SCREEN)===================== */
