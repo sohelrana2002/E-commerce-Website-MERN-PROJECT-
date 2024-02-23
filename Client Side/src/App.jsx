@@ -2,12 +2,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import { Home, About, Products, Contact, Cart, ErrorPage, SignUp, LogIn, SingleProduct } from './pages/index'
+import ScrollToTop from './helper/ScrollToTop'
 
 
 function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
